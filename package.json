@@ -1,0 +1,13 @@
+{
+  "name": "sneaker-labs",
+  "version": "1.0.0",
+  "source": "index.html",
+  "license": "MIT",
+  "devDependencies": {
+    "parcel": "^2.0.1"
+  },
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build index.html"
+  }
+}
