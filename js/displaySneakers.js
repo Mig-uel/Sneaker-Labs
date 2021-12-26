@@ -2,7 +2,7 @@ function displaySneakers(total, results) {
   const container = document.querySelector('.sneaker-info-container');
   let fragment = document.createDocumentFragment();
 
-  for (i = 0; i < results.length; i++) {
+  for (let i = 0; i < results.length; i++) {
     /* Sneaker Card */
     let card = document.createElement('div');
     card.className = 'sneaker-cards';
