@@ -9,6 +9,10 @@ body {
   margin: 0;
   box-sizing: border-box;
 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .container {
   /* outline: 1px solid #ccc; */
@@ -97,7 +101,19 @@ body {
 
   color: rgb(95, 95, 95);
 }
+.footer {
+  /* outline: 1px solid #ccc; */
 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-size: 1.2em;
+  color: rgb(95, 95, 95);
+}
+a {
+  color: rgb(95, 95, 95);
+  text-decoration: none;
+}
 /* Media Queries */
 @media screen and (max-width: 800px) {
   /* 600px */
