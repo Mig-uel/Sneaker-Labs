@@ -6,7 +6,7 @@ const CardList = () => {
     method: "GET",
     "headers": {
       "x-rapidapi-host": "v1-sneakers.p.rapidapi.com",
-      "x-rapidapi-key": "d8469f9fa3mshfd352ae76b760c4p1fe951jsncf8ab3ca64fa"
+      "x-rapidapi-key": `${process.env.REACT_APP_SNEAKER_KEY}`
     }
   });
   console.log(error);
