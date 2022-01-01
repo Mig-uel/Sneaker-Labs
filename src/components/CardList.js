@@ -9,7 +9,7 @@ const CardList = () => {
       "x-rapidapi-key": "d8469f9fa3mshfd352ae76b760c4p1fe951jsncf8ab3ca64fa"
     }
   });
-
+  console.log(error);
   return (
     <>
       {response && response.results.map(sneaker => (
