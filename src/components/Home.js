@@ -1,7 +1,13 @@
+
+import CardList from './CardList';
+
 const Home = () => {
   return (
-    <div className="">
-      <h1>Home</h1>
+    <div className="home">
+      <h1>All Sneakers</h1>
+      <div className="home-container">
+        <CardList />
+      </div>
     </div>
   );
 }
