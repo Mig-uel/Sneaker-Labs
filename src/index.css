@@ -1,5 +1,4 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
-@import url(https://fonts.googleapis.com/css?family=VT323:regular);
 @import url(https://fonts.googleapis.com/css?family=Staatliches:regular);
 
 * {
@@ -16,7 +15,12 @@
 
   width: 100%;
 }
-.nav {
+::selection {
+  /* background: #f5f5f5; */
+  background: rgba(255,255,255,0.0);
+  color: #fc5c65;
+}
+nav {
   /* outline: 2px solid blue; */
 
   background-color: #ccc;
@@ -69,6 +73,7 @@
 
   width: 90%;
   transition: all 0.3s ease-in-out;
+  /* font-family: 'Staatliches', monospace; */
 }
 .image-author {
   /* outline: 2px solid red; */
@@ -83,6 +88,7 @@
 }
 ::placeholder {
   color: rgba(255, 255, 255, 0.5);
+  /* font-family: 'Staatliches', monospace; */
 }
 p > a {
   color: rgba(255, 255, 255, 0.5);
@@ -94,7 +100,7 @@ p > a:hover {
 }
 
 .home {
-  /* outline: 3px solid orange; */
+  /* outline: 2px solid orange; */
 
   display: flex;
   flex-direction: column;
@@ -102,38 +108,25 @@ p > a:hover {
   align-items: center;
 
   width: 100%;
+  padding-bottom: 5rem;
 }
 .home > h1 {
   align-self: flex-start;
   width: max-content;
   margin: 1rem;
-}
-.home-container {
-  /* outline: 2px solid red; */
-
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-
-  gap: 1rem;
-
-  width: 100%;
-  padding-bottom: 5rem;
+  font-family: 'Staatliches', monospace;
 }
 .card-container {
   /* outline: 2px solid red; */
-  width: max-content;
-
+  width: 100%;
+  
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   flex-wrap: wrap;
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
   gap: 5rem 2rem;
-
-  position: relative;
 }
 .card {
   /* outline: 2px solid red; */
@@ -149,13 +142,14 @@ p > a:hover {
 
   width: 400px;
   height: 300px;
-
-  background-image: url(https://images.stockx.com/images/Air-Jordan-1-Retro-High-OG-Dark-Marina-Blue.jpg?fit=fill&bg=FFFFFF&w=700&h=500&auto=format,compress&trim=color&q=90&dpr=2&updated_at=1639152812);
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-
+}
+span {
   position: relative;
+  display: flex;
+  cursor: pointer;
 }
 .info-container {
   /* outline: 2px solid red; */
@@ -164,9 +158,17 @@ p > a:hover {
   width: 100%;
   position: absolute;
 
+  cursor: pointer;
+  text-decoration: none;
+
   border-radius: 4px;
 
   background-color: rgba(0, 0, 0, 0.5);
+
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 0 0 1rem #000;
 }
 .card:hover + .info-container {
   display: flex;
@@ -176,18 +178,6 @@ p > a:hover {
 
   color: #fff;
 }
-.sneaker-name {
-  /* outline: 2px solid red; */
-
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #fff;
-  text-shadow: 0 0 1rem #000;
-  padding: 1rem;
-}
-
-
-
 @media screen and (max-width: 850px) {
   .nav {
     height: auto;
@@ -202,11 +192,12 @@ p > a:hover {
     width: 100%;
     font-size: .8rem;
   }
+  .card-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
   .image-author {
     font-size: .75rem;
-  }
-  .card-container {
-    width: 100%;
   }
   .card {
     border-radius: 0;
@@ -216,14 +207,14 @@ p > a:hover {
   }
   .info-container {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     color: #fff;
-
     border-radius: 0;
   }
-  .sneaker-name {
-    font-size: 1.5rem;
+  .home > h1 {
+    align-self: center;
+    margin: 1rem 0 0 0;
+
   }
 }

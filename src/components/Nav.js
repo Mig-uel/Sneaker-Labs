@@ -7,14 +7,14 @@ const Nav = () => {
   }
 
   return (
-    <div className="nav" style={{ backgroundImage: `url(${image.imageURL})` }}>
+    <nav style={{ backgroundImage: `url(${image.imageURL})` }}>
       <div className="nav-wrapper">
         <h1 className="nav-title">Sneaker Labs</h1>
         <input type="text" className="search-bar" placeholder="Search for a sneaker, brand, style..." />
       </div>
       {image &&
         <p className="image-author">Photo by <a href={image.hotlink} target="_blank" rel="noopener noreferrer">{image.author}</a> on <a href={image.unsplash} target="_blank" rel="noreferrer noopener">Unsplash</a></p>}
-    </div>
+    </nav>
   );
 }
 

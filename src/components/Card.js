@@ -7,12 +7,12 @@ const Card = ({ sneaker }) => {
   }
 
   return (
-    <div className="card-container">
+    <span>
       <div className="card" style={bg}></div>
-      <div className="info-container">
-        <div className="sneaker-name">{sneaker.name}</div>
-      </div>
-    </div>
+      <a className="info-container" href="https://google.com">
+        {sneaker.name}
+      </a>
+    </span>
   );
 }
 
