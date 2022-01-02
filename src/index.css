@@ -35,7 +35,29 @@ nav {
   justify-content: center;
   align-items: center;
 
-  position: sticky;
+  position: relative;
+
+  transition: all 0.5s ease-in-out;
+}
+.test {
+  /* outline: 2px solid red; */
+
+  height: 5rem;
+  width: 100%;
+  z-index: 1;
+  transition: all 0.5s ease-in-out;
+
+  flex-direction: row;
+  box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.2);
+
+  position: fixed;
+}
+.test2 {
+  /* outline: 2px solid blue; */
+  display: flex;
+  flex-direction: row;
+
+  height: 100%;
 }
 .nav-wrapper {
   /* outline: 2px solid green; */
@@ -69,7 +91,7 @@ nav {
   padding: 1rem;
   font-size: 1rem;
   color: #fff;
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
 
   width: 90%;
   transition: all 0.3s ease-in-out;
@@ -193,7 +215,7 @@ span {
   }
   .nav-title {
     font-size: 3rem;
-    padding: 0
+    padding: 0;
   }
   .search-bar {
     padding: 0.8rem;
