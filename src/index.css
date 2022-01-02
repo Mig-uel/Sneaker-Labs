@@ -169,15 +169,23 @@ span {
   font-weight: bold;
   color: #fff;
   text-shadow: 0 0 1rem #000;
-}
-.card:hover + .info-container {
-  display: flex;
+
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
   color: #fff;
 }
+
+/* .card:hover + .info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color: #fff; 
+}*/
+
 @media screen and (max-width: 850px) {
   .nav {
     height: auto;
@@ -195,6 +203,7 @@ span {
   .card-container {
     flex-direction: column;
     gap: 2rem;
+    padding: 1rem;
   }
   .image-author {
     font-size: .75rem;
@@ -204,6 +213,7 @@ span {
     border: none;
     box-shadow: none;
     width: 100%;
+    /* outline: 1px solid red; */
   }
   .info-container {
     display: flex;
@@ -215,6 +225,5 @@ span {
   .home > h1 {
     align-self: center;
     margin: 1rem 0 0 0;
-
   }
 }
