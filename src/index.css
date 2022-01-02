@@ -226,4 +226,7 @@ span {
     align-self: center;
     margin: 1rem 0 0 0;
   }
+  span {
+    margin-bottom: .1rem;
+  }
 }
